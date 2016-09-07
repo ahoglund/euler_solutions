@@ -1,4 +1,10 @@
 defmodule EulerTwo do
+
+  # https://projecteuler.net/problem=2
+  #
+  # By considering the terms in the Fibonacci sequence whose values
+  # do not exceed four million, find the sum of the even-valued terms.
+
   def even_fib_sum(limit \\ 4_000_000), do: _even_fib_sum(fib(limit), 0)
 
   defp _even_fib_sum([], sum), do: sum
